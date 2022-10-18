@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Test</string>
+    <string name="human_metabolism_calculator">Human Metabolism calculator</string>
+    <string name="your_name">Your Name :</string>
+    <string name="gender">Gender :</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="your_age">Your Age :</string>
+    <string name="your_weight_kg">Your Weight (Kg) :</string>
+    <string name="your_height_cm">Your Height (cm) :</string>
+    <string name="activity_level">Activity Level :</string>
+    <string name="load_an_image">Load an Image</string>
+    <string name="find_your_needed_calories">Find Your needed Calories</string>
 </resources>
