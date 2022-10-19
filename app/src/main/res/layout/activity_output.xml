@@ -1,10 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:backgroundTint="#c5f1da"
-    tools:context=".OutputActivity">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <data>
+
+
+        <variable
+            name="user"
+            type="com.centennial.mapd711.hisham.test.model.UserModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#c5f1da"
+        android:orientation="vertical"
+        tools:context=".ui.OutputActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            tools:text="@string/hello"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:text="@{`Hello ` + user.name}"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/given_inputs_are"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{`Age : ` + user.age}"
+            android:textStyle="bold"
+            tools:text="Age" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{`Weight : ` + user.weight + `Kg` }"
+            android:textStyle="bold"
+            tools:text="Weight" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{`Height : ` + user.height+ ` cm`}"
+            android:textStyle="bold"
+            tools:text="Height" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{`Activity Level : ` + user.activityLevel.name}"
+            android:textStyle="bold"
+            tools:text="Activity Level" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/results"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{`BMR : ` + user.BMR + ` Calories/day`  }"
+            android:textStyle="bold"
+            tools:text="1710 calories/day" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@{`Daily needs based on activity level: `+user.caloriesNeeded+  ` Calories`}"
+            android:textStyle="bold"
+            tools:text="Daily needs based on activity level: 2651 Calories" />
+
+
+        <ImageView
+            android:id="@+id/iv_bmr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bmr"
+            android:visibility="@{user.imageVisibility , default=gone}"
+            tools:visibility="visible" />
+
+
+    </LinearLayout>
+</layout>

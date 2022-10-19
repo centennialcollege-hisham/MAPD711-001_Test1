@@ -2,6 +2,7 @@
 <resources>
 
     <string-array name="exercise">
+        <item>Few OR No exercise</item>
         <item>Light exercise (1–3 days/wk)</item>
         <item>Medium exercise (4–5 days/wk)</item>
         <item>Vigorous exercise (6–7 days/wk)</item>

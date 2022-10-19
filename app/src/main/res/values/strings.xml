@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Test</string>
+    <string name="app_name">MAPD711-001 Test</string>
     <string name="human_metabolism_calculator">Human Metabolism calculator</string>
     <string name="your_name">Your Name :</string>
     <string name="gender">Gender :</string>
@@ -11,4 +11,7 @@
     <string name="activity_level">Activity Level :</string>
     <string name="load_an_image">Load an Image</string>
     <string name="find_your_needed_calories">Find Your needed Calories</string>
+    <string name="results">Results:</string>
+    <string name="given_inputs_are">Given Inputs are:</string>
+    <string name="hello">Hello</string>
 </resources>
